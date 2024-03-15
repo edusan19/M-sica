@@ -1,0 +1,92 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    background-color: #8bc34a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.cancion {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.8);
+    box-shadow: 4px 4px 20px 0px #000000cc;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: calc(20% - 20px); /* Ajustar el ancho de cada contenedor */
+    position: relative; /* Añadir posición relativa para que los elementos absolutos se posicionen correctamente */
+}
+
+.titulo-cancion {
+    text-align: center;
+    position: absolute; /* Posición absoluta para superponer encima de la imagen */
+    top: 50%; /* Ajustar la posición del título al centro */
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: #8bc34a;
+    padding: 10px;
+    font-size: 20pt;
+    text-transform: uppercase;
+    transform: translateY(-50%); /* Centrar verticalmente */
+    z-index: 1; /* Asegurar que el título esté encima de la imagen */
+}
+
+.link-cancion {
+    text-decoration: none;
+    color: #333;
+}
+
+.imagen-cancion {
+    width: 100%;
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    max-width: 100%; /* Asegurar que la imagen no sobrepase el contenedor */
+    max-height: 200px; /* Establecer una altura máxima */
+    object-fit: cover; /* Ajustar la imagen al contenedor sin distorsionarla */
+    border-radius: 5px;
+    margin-top: 10px; /* Añadir un pequeño margen superior para separarla del título */
+}
+
+.boton-play-pause {
+    display: inline-block;
+    background-color: #8bc34a;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 10px; /* Añadir un pequeño margen superior para separarlo de la imagen */
+}
+
+.artista {
+    position: absolute;
+    top: 10px; /* Ajustar la posición del artista en la parte superior */
+    left: 0;
+    right: 0;
+    text-align: center; /* Centrar horizontalmente */
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    border-top: 2px solid black;
+}
